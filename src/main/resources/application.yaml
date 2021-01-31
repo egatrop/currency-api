@@ -1,0 +1,6 @@
+server:
+  port: 8080
+
+spring:
+  ecb-url: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+  xe-url: https://www.xe.com/currencycharts/?from=<CUR_FROM>&to=<CUR_TO>

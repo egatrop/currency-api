@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preload" href="/shared/dist/fonts/opensans_fixed/OpenSans-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/shared/dist/fonts/opensans_fixed/OpenSans-SemiBold.woff2" as="font" crossorigin>
+    <link rel="preload" href="/shared/dist/fonts/opensans_fixed/OpenSans-Bold.woff2" as="font" crossorigin>
+    <link rel="preload" href="/shared/dist/fonts/ecb-iconset/ECB-icon-set.woff2" as="font" crossorigin>
+    <link rel="icon" href="/fav.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <title>Euro foreign exchange reference rates</title>
+    <link rel="canonical" href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">
+
+    <meta name="author" content="European Central Bank">
+    <meta name="description" content="The euro foreign exchange reference rates (also known as the ECB reference rates) are published by the ECB at around 16:00 CET. Reference rates for all the official currencies of non-euro area Member States of the European Union and world currencies with the most liquid active spot FX markets are set and published. The ECB aims to ensure that the exchange rates published reflect the market  conditions prevailing at 14:15 CET. Reference rates are not intended to be used in any market transactions, whether directly or indirectly (as an underlying benchmark), but for information purposes only.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Tag Manager -->
+    <script>
+			(function(w,d,s,l,i){
+				w[l]=w[l]||[];
+				w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+				var f=d.getElementsByTagName(s)[0],
+					j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+				j.async=true;
+				j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+				f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-MJJJ6W9');
+		</script>
+    <!-- End Google Tag Manager -->
+
+    <script>
+            var ECB = {};
+            ECB.currentLanguage = 'en';
+            ECB.isoLocalLanguageName = 'English';
+        </script>
+
+    <link rel="stylesheet" href="/shared/dist/css/main-ecb.min.css?19905-2" media="all">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ecb">
+
+    <meta name="explainerDate" content="1 January 1970">
+    <meta property="og:type" content="article">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Euro foreign exchange reference rates">
+    <meta property="og:url" content="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">
+    <meta property="og:image:secure_url" content="https://www.ecb.europa.eu/stats/shared/img/socialmedia/social-default.jpg?c8bbb6c0928bcf04ee20bede19aa9e73">
+    <meta property="og:image" content="https://www.ecb.europa.eu/stats/shared/img/socialmedia/social-default.jpg?c8bbb6c0928bcf04ee20bede19aa9e73" >
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+    <meta property="og:description" content="The euro foreign exchange reference rates (also known as the ECB reference rates) are published by the ECB at around 16:00 CET. Reference rates for all the official currencies of non-euro area Member States of the European Union and world currencies with the most liquid active spot FX markets are set and published. The ECB aims to ensure that the exchange rates published reflect the market  conditions prevailing at 14:15 CET. Reference rates are not intended to be used in any market transactions, whether directly or indirectly (as an underlying benchmark), but for information purposes only.">
+    <meta property="og:site_name" content="European Central Bank">
+
+    <noscript>
+        <style>
+                .accordion .content-box {
+                    display: block;
+                }
+            </style>
+    </noscript>
+    <script type="text/javascript">
+        /*! ECB - v1.6.24 - European Central Bank */
+
+var ECB=window.ECB||{};ECB.fast={},ECB.slow={},ECB.supports={},ECB.fast.attribution=function(a){var b=a.style.backgroundImage,c=function(a){return-1!==a.indexOf("http")||-1!==a.indexOf('url("//')};b&&!c(b)&&ECB.fast.exif.getArtist(b.substr(5,b.length-7),function(b){if(b.length>0){a.classList.contains("coin-cropper")&&(a=a.parentElement.closest("[data-image]")),a.classList.add("-attribution"),a.insertAdjacentHTML("beforeend",'<div class="attribution"><span class="attribution-details">© '+b+'</span> <button aria-label="Photographer"></button></div>');var c=a.querySelector(".attribution button");c.addEventListener("click",function(a){return c.parentElement.classList.toggle("-active"),a.preventDefault(),a.stopPropagation(),!1})}})},ECB.fast.connector=function(a){a=a||document;var b=a.querySelectorAll(".connector"),c="-transparent-blue",d="-light-blue",e=function(a){a.classList.contains("-gradient-upper")&&(c="-gradient-upper"),a.classList.contains("-dark-grey")&&(d="-dark-grey"),a.classList.contains("-light-grey-blue")&&(c="-transparent-light-grey",d="-transparent-blue");var b="<div class='upper-connection "+c+"'></div> <div class='lower-connection "+d+"'></div>";a.insertAdjacentHTML("afterend",b)},f=function(a,b){return a.classList.contains(b)},g=function(a,b){for(var c=0;c<b.length;c++)if(f(a,b[c]))return!0;return!1};if(b.length>0)e(b[b.length-1]);else{var h=a.querySelectorAll(".contact-box, .see-also-boxes, .carousel, .promo-box, .contact-box, .explainer-box");if(h.length){var i=h[0],j=i.previousElementSibling;j&&"DIV"==j.tagName&&!f(j,"title")&&(j.classList.add("connector"),g(j,["section","intro","boxes","accordion","definition-list"])&&j.classList.add("-gradient-upper"),g(j,["jumbo-box"])&&f(j,"-dark-blue")&&j.classList.add("-light-grey-blue"),f(i,".carousel")||j.classList.add("-dark-grey"),e(j))}}},ECB.fast.exif=function(){function a(a,b,c){var d,e,c,f,g;for(d="",c=b+c;b<c;)switch((e=a.getUint8(b++))>>4){case 0:case 1:case 2:case 3:case 4:case 5:case 6:case 7:d+=String.fromCharCode(e);break;case 12:case 13:f=a.getUint8(b++),d+=String.fromCharCode((31&e)<<6|63&f);break;case 14:f=a.getUint8(b++),g=a.getUint8(b++),d+=String.fromCharCode((15&e)<<12|(63&f)<<6|(63&g)<<0)}return d}var b=function(b,c,d){return a(b,c,d)},c=function(a,b,c,e){var f,g,h=a.getUint16(c,!e);for(g=0;g<h;g++)if(f=c+12*g+2,315===a.getUint16(f,!e))return d(a,f,b,e);return""},d=function(a,c,d,e){var f=a.getUint32(c+4,!e),g=a.getUint32(c+8,!e)+d;return b(a,f>4?g:c+8,f-1)},e=function(a,d,e){if("exif"!=b(a,d,4).toLowerCase())return!1;var f,g=d+(e?8:6);if(18761==a.getUint16(g))f=!1;else{if(19789!=a.getUint16(g))return!1;f=!0}if(42!=a.getUint16(g+2,!f))return!1;var h=a.getUint32(g+4,!f);return!(h<8)&&c(a,g,g+h,f)},f=function(a,b){return!!(a&1<<b-1)},g=function(a){var c=new DataView(a),d=!1;if(1380533830==c.getUint32(0)&&1464156752==c.getUint32(8)&&1448097880==c.getUint32(12)){if(!f(c.getUint8(20),4))return!1;d=!0}else if(255!=c.getUint8(0)||216!=c.getUint8(1))return!1;var g,h=2,i=a.byteLength;if(d)for(h=16;h<i;){h+=c.getUint32(h,!0)+4;var g=b(c,h,4);if("EXIF"==g)return e(c,h,!0,c.getUint32(h,!0));h+=4}else for(;h<i;){if(255!=c.getUint8(h))return!1;if(225==(g=c.getUint8(h+1)))return e(c,h+4,!1,c.getUint16(h+2)-2);h+=2+c.getUint16(h+2)}};return{getArtist:function(a,b){function c(a){var c=g(a);b.call(window,c||"")}var d=new XMLHttpRequest;d.onload=function(){200!=this.status&&0!==this.status||c(d.response),d=null},d.open("GET",a,!0),d.responseType="arraybuffer",d.send(null)}}}(),function(){window.IntersectionObserver||document.evaluate||-1!=window.navigator.userAgent.indexOf("MSIE ")||(ECB.slow.blockExecution=!0)}(),ECB.fast.ieBlock=function(){var a=function(a,b,c){var d=new XMLHttpRequest;d.open("GET",a,!0),d.onerror=function(a){c()},d.onload=function(a){200==this.status?b(this.response):this.onerror(a)},d.send()};if(ECB.slow.blockExecution){var b=document.querySelector("#main-wrapper > .header"),c=document.getElementById("ecb-doc-header"),d=document.querySelector("main"),e=function(a){d.innerHTML=a,ECB.fast.loadImages(),c&&c.remove(),b&&b.remove()};a("/shared/nav/ieBlock."+ECB.currentLanguage+".html",e,function(){a("/shared/nav/ieBlock.en.html",e)})}},ECB.fast.isLoading=function(){for(var a=document.querySelectorAll(".-is-loading"),b=0;b<a.length;b++){a[b].insertAdjacentHTML("afterbegin","<div class='is-busy'> Loading ... </div>")}},ECB.fast.langLinks=function(){if(ECB.fast.isEuLanguage=!!document.querySelector("#language-values a[lang="+ECB.currentLanguage+"]:not([specialLang])"),ECB.fast.isEuLanguage)for(var a=document.querySelectorAll("a:not([lang]"),b=/\.[a-z]{2,3}(\.html([\?#].*)?)$/,c=function(a){return-1===a.getAttribute("href").indexOf(":")},d=function(a){a.setAttribute("href",a.getAttribute("href").replace(b,"."+ECB.currentLanguage+"$1"))},e=0;e<a.length;e++){var f=a[e];f.hasAttribute("href")&&c(f)&&d(f)}},ECB.fast.loadImages=function(a){var b=a;a||(b=document);var c,d=function(a){for(var b=0;b<a.length;b++)a[b].isIntersecting&&(e(a[b].target),c.unobserve(a[b].target))},e=function(a){var b=ECB.supports.webp&&a.getAttribute("data-image-webp")?a.getAttribute("data-image-webp"):a.getAttribute("data-image"),c=new Image;c.addEventListener("load",function(){var c=a;return function(d){c.style.backgroundImage="url('"+b+"')",a.classList.contains("-inner")||ECB.fast.attribution(c),c.classList.add("loaded")}}()),c.src=b};window.IntersectionObserver&&(c=new IntersectionObserver(d,{rootMargin:"50%"}));for(var f=b.querySelectorAll("[data-image]"),g=0;g<f.length;g++)!f[g].classList.contains("fast")&&c?c.observe(f[g]):e(f[g])},ECB.fast.random=function(a){Element.prototype.matches||(Element.prototype.matches=Element.prototype.msMatchesSelector||Element.prototype.webkitMatchesSelector);var b=a;a||(b=document);for(var c=b.querySelectorAll(".random"),d=0;d<c.length;d++){c[d].querySelectorAll(".random-item");var e=[];Array.prototype.slice.call(c[d].children).map(function(a){a.matches(".random-item")&&e.push(a)});var f=Math.floor(Math.random()*e.length);c[d].classList.contains("-daily")&&(f=(new Date).getDate()%e.length),e[f].classList.add("active");for(var g=0;g<e.length;g++)g!=f&&c[d].removeChild(e[g])}},ECB.fast.supportCheck=function(a){var b=new Image;b.onload=function(c){"load"==c.type&&1==b.width&&(document.documentElement.classList.add("webp"),ECB.supports.webp=!0),a&&a()},b.onerror=function(){a&&a()},b.src="data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA="},ECB.fast.tempFixes=function(){!function(a,b){for(var c=document.querySelectorAll(a),d=0;d<c.length;d++)b(c[d])}(".table .wrapper h3",function(a){var b=a.parentElement.parentElement,c=document.createElement("div");c.classList.add("header"),c.innerHTML='<div class="title">'+a.innerHTML+"</div>",a.parentElement.removeChild(a),b.prepend(c)})},ECB.fast.supportCheck(function(){var a=function(){ECB.fast.ieBlock(),ECB.fast.tempFixes(),ECB.fast.random(),ECB.fast.loadImages(),ECB.fast.langLinks(),ECB.fast.connector(),ECB.fast.isLoading()};"loading"!==document.readyState?a():window.addEventListener("DOMContentLoaded",a)});    </script>
+    <script type="text/javascript" async src="/shared/dist/js/slow.min.js"></script>
+</head>
+<body class="project-ecb section-stats sub-policy_and_exchange_rates sub-euro_reference_exchange_rates">
+
+<header id="ecb-doc-header">
+    <div class="headerHolder">
+        <div class="logo-name">
+            <a href="/home/html/index.en.html" aria-hidden="true" tabindex="-1">
+                <img src="/shared/img/logo/logo_name.en.svg">
+            </a>
+        </div>
+        <div class="logo-name-mobile">
+            <a href="/home/html/index.en.html" aria-hidden="true">
+                <div style="background-image:url(/shared/img/logo/logo_name_mobile.en.svg)"></div>
+            </a>
+        </div>
+        <div id="language-selector-holder" role="button">
+            <div id="language-selector">LANGUAGE:</div>
+            <div id="language-selected"><span class="ecb-full">EN</span></div>
+            <div id="language-values">
+                <a href="index.bg.html"  lang="bg" title="Български"><span class="ecb-full">Български</span></a>
+                <a href="index.cs.html"  lang="cs" title="Čeština"><span class="ecb-full">Čeština</span></a>
+                <a href="index.da.html"  lang="da" title="Dansk"><span class="ecb-full">Dansk</span></a>
+                <a href="index.de.html"  lang="de" title="Deutsch"><span class="ecb-full">Deutsch</span></a>
+                <a href="index.el.html"  lang="el" title="Eλληνικά"><span class="ecb-full">Eλληνικά</span></a>
+                <a href="index.en.html" class="selected" lang="en" title="English"><span class="ecb-full">English</span></a>
+                <a href="index.es.html"  lang="es" title="Español"><span class="ecb-full">Español</span></a>
+                <a href="index.et.html"  lang="et" title="Eesti keel"><span class="ecb-full">Eesti keel</span></a>
+                <a href="index.fi.html"  lang="fi" title="Suomi"><span class="ecb-full">Suomi</span></a>
+                <a href="index.fr.html"  lang="fr" title="Français"><span class="ecb-full">Français</span></a>
+                <a href="index.ga.html"  lang="ga" title="Gaeilge"><span class="ecb-full">Gaeilge</span></a>
+                <a href="index.hr.html"  lang="hr" title="Hrvatski"><span class="ecb-full">Hrvatski</span></a>
+                <a href="index.hu.html"  lang="hu" title="Magyar"><span class="ecb-full">Magyar</span></a>
+                <a href="index.it.html"  lang="it" title="Italiano"><span class="ecb-full">Italiano</span></a>
+                <a href="index.lt.html"  lang="lt" title="Lietuvių"><span class="ecb-full">Lietuvių</span></a>
+                <a href="index.lv.html"  lang="lv" title="Latviešu"><span class="ecb-full">Latviešu</span></a>
+                <a href="index.mt.html"  lang="mt" title="Malti"><span class="ecb-full">Malti</span></a>
+                <a href="index.nl.html"  lang="nl" title="Nederlands"><span class="ecb-full">Nederlands</span></a>
+                <a href="index.pl.html"  lang="pl" title="Polski"><span class="ecb-full">Polski</span></a>
+                <a href="index.pt.html"  lang="pt" title="Português"><span class="ecb-full">Português</span></a>
+                <a href="index.ro.html"  lang="ro" title="Română"><span class="ecb-full">Română</span></a>
+                <a href="index.sk.html"  lang="sk" title="Slovenčina"><span class="ecb-full">Slovenčina</span></a>
+                <a href="index.sl.html"  lang="sl" title="Slovenščina"><span class="ecb-full">Slovenščina</span></a>
+                <a href="index.sv.html"  lang="sv" title="Svenska"><span class="ecb-full">Svenska</span></a>
+            </div>
+        </div>
+
+        <button id="hamburger" aria-haspopup="true" >
+            Menu
+            <div class="icon">
+                <div class="line-outer">
+                    <div class="line-inner"></div>
+                </div>
+                <div class="line-outer">
+                    <div class="line-inner"></div>
+                </div>
+                <div class="line-outer">
+                    <div class="line-inner"></div>
+                </div>
+            </div>
+            <div class="menu-additional-links">
+                <a href="https://www.bankingsupervision.europa.eu/" class="-ssm">Banking supervision website</a>
+            </div>
+        </button>
+        <div class="logo">
+            <a href="/home/html/index.en.html" alt="Go to our homepage">
+                <img src="/shared/img/logo/logo_only.svg" alt="our logo, a yellow Euro sign surrounded by yellow stars centered in a dark blue circle resting on a dark blue base">
+            </a>
+        </div>
+        <div id="ecb-mainnavwrapper"><a class="" href="/ecb/html/index.en.html">About</a>
+            <a class="" href="/press/html/index.en.html">Media</a>
+            <a class="" href="/explainers/html/index.en.html">Explainers</a>
+            <a class="" href="/pub/html/index.en.html">Research &amp; Publications</a>
+            <a class="active" href="/stats/html/index.en.html">Statistics</a>
+            <a class="" href="/mopo/html/index.en.html">Monetary Policy</a>
+            <a class="" href="/euro/html/index.en.html">The euro</a>
+            <a class="" href="/paym/html/index.en.html">Payments &amp; Markets</a>
+            <a class="" href="/careers/html/index.en.html">Careers</a>
+        </div>
+
+
+        <div id="page-actions">
+            <div class="ecb-quickSearch" style="width:100%;">
+                <form role="search" method="get" style="width:100%;display:flex" onsubmit="return false">
+                    <input type="text" name="search" class="addsearch" id="searchInput" maxlength="300" alt="Search" autocomplete="off" />
+                    <a href="#" id="searchButton">Search</a>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="ecb-breadcrumbwrapper"><nav id="ecb-breadcrumbs"><a href="/">Home</a></nav></div>
+
+    </div>
+
+</header>
+<div id="addSearch-container-full">
+    <div class="blue-bg">
+        <div class="arrow-top"></div>
+        <div class="section filter-radio">
+            <div class="tabs-container -white-blue">
+
+                <input id="searchAll" name="search-tab-group" type="radio" checked="" onClick="ECB.slow.addSearchApi.filterDate(this.value);" value="all">
+                <label for="searchAll" class="count-hits-all">ANYTIME <span class="count-hits"></span></label>
+                <div class="spacer"></div>
+                <input id="searchMonth" name="search-tab-group" type="radio" onClick="ECB.slow.addSearchApi.filterDate(this.value);" value="month">
+                <label for="searchMonth" class="count-hits-month">PAST MONTH <span class="count-hits"></span></label>
+                <div class="spacer"></div>
+                <input id="searchYear" name="search-tab-group" type="radio" onClick="ECB.slow.addSearchApi.filterDate(this.value);" value="year">
+                <label for="searchYear" class="count-hits-year">PAST YEAR <span class="count-hits"></span></label>
+
+            </div>
+            <div class="tabs-search-options-head">
+                <div id="text-search-options" class="title-option">Search Options</div>
+                <div id="text-image-preview" class="title-option hidden">Image Preview</div>
+            </div>
+        </div>
+        <div class="arrow-bottom"></div>
+        <div class="filter-selection form">
+            <div class="form-content">
+                <form>
+
+                    <div>
+                        <label for="dropdownSuggestions">Sort by</label>
+                        <div id="dropdownFilter" class="dropdown">
+                            <span class="icon"></span>
+                            <select onchange="ECB.slow.addSearchApi.filterDate(this.value)" id="searchFilterDate">
+                                <option value="all" class="count-hits-all">ANYTIME </option>
+                                <option value="month" class="count-hits-month">PAST MONTH </option>
+                                <option value="year" class="count-hits-year">PAST YEAR </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="dropdownSuggestions" class="space-top">Suggestions</label>
+                        <div id="dropdownSuggestions" class="dropdown">
+                            <span class="icon"></span>
+                            <select onchange="ECB.slow.addSearchApi.initSearch(this.value)" id="searchSuggestion">
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="white-bg">
+        <div class="section">
+            <div class="result-main-panel">
+                <!--<h1 class="ecb0 title-stick">Search Results</h1>-->
+                <div id="addsearch-api-results"></div>
+                <div class="addsearch-legends-categories">
+                    <span id="adcat_home">Home</span>
+                    <span id="adcat_press">Media</span>
+                    <span id="adcat_explainers">Explainers</span>
+                    <span id="adcat_pub">Research &amp; Publications</span>
+                    <span id="adcat_stats">Statistics</span>
+                    <span id="adcat_mopo">Monetary Policy</span>
+                    <span id="adcat_euro">The &euro;uro</span>
+                    <span id="adcat_paym">Payments &amp; Markets</span>
+                    <span id="adcat_career">Careers</span>
+                </div>
+            </div>
+            <div class="result-side-panel">
+                <div id="addsearch-sidemenu">
+                    <div id="result-suggestions">
+                        <span>Suggestions</span>
+                        <div id="suggestions-container">
+                        </div>
+                    </div>
+                    <div id="result-sortBy">
+                        <span>Sort by</span>
+                        <div id="sortby-radio-container">
+                            <div class="addsearch-sortby-radiogroup">
+                                <label>
+                                    <input id="sort-by-relevance" type="radio" name="sortby-radio-container" onclick="ECB.slow.addSearchApi.sortBy('relevance')" data-field="relevance" data-order="desc" value="" checked="">Relevance
+                                </label>
+                                <label>
+                                    <input id="sort-by-date" type="radio" name="sortby-radio-container" onclick="ECB.slow.addSearchApi.sortBy('date')" data-field="date" data-order="desc" value="">Date
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="addsearch-image-container"><a href="#" class="no-icon" target="_blank"><img src="" id="addsearch-image" /></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-wrapper">
+    <div class="header fast image-attribution  -small"
+         data-image-webp="/stats/shared/img/header.webp" 			data-image="/stats/shared/img/header.jpg"><div data-image="/stats/shared/img/header.jpg" data-image-webp="/stats/shared/img/header.webp" ></div></div>
+    <main
+    >
+
+
+
+        <div id="ecb-social-sharing" class=""
+             tab-index="2">
+            <ul class="-links">
+                <li class="-twitter"><a href="javascript:window.open('https://twitter.com/intent/tweet?url='+window.location.href,'_blank','width=600,height=400,menubar=no')" title="Share on Twitter"></a></li>
+                <li class="-facebook"><a href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u='+window.location.href,'_blank','width=600,height=400,menubar=no')" title="Share on Facebook"></a></li>
+                <li class="-linkedin"><a href="javascript:window.open('https://www.linkedin.com/shareArticle?url='+window.location.href,'_blank','width=600,height=400,menubar=no')" title="Share on LinkedIn"></a></li>
+                <li class="-email"><a href="javascript:window.open('mailto:?subject=I would like to share this link with you&body=Link to the website of the European Central Bank: '+window.location.href)" title="Share by Email"></a></li>
+            </ul>
+            <div class="-separator"></div>
+            <ul class="-links">
+                <li class="-print"><a href="javascript:window.print()" title="Print page"></a></li>
+            </ul>
+
+        </div>
+
+        <!-- converted at 2020-06-01_22:53:02 -->
+        <div class="title">
+            <h1>Euro foreign exchange reference rates</h1>
+        </div>
+
+        <div class="section">
+            <p>The reference rates are usually updated around 16:00 CET on every working day, except on TARGET closing days. They are based on a regular daily concertation procedure between central banks across Europe, which normally takes place at 14:15 CET. </p>
+            <a href="/home/contacts/working-hours/html/index.en.html">TARGET closing days</a>
+        </div>
+
+        <div class="jumbo-box">
+            <div class="upper">
+                <div class="content-box">
+                    <h3>Euro foreign exchange reference rates: 29&nbsp;January&nbsp;2021</h3>
+                    <p>All currencies quoted against the euro (base currency)</p>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="table -sortable">
+                    <div class="wrapper">
+                        <table class="forextable">
+                            <thead>
+                            <tr>
+                                <th colspan="2"  class="sort">Currency<span></span></th>
+                                <th class="number "  >Spot</th>
+                                <th class="centered">Chart</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td id="USD" class="currency"><a href="eurofxref-graph-usd.en.html">USD</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-usd.en.html">US dollar</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-usd.en.html">
+                                    <span class="rate">1.2136</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-usd.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="USD" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="JPY" class="currency"><a href="eurofxref-graph-jpy.en.html">JPY</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-jpy.en.html">Japanese yen</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-jpy.en.html">
+                                    <span class="rate">127.05</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-jpy.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="JPY" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="BGN" class="currency"><a href="eurofxref-graph-bgn.en.html">BGN</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-bgn.en.html">Bulgarian lev</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-bgn.en.html">
+                                    <span class="rate">1.9558</span></a>
+                                    <span class="trend eq">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-bgn.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="BGN" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="CZK" class="currency"><a href="eurofxref-graph-czk.en.html">CZK</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-czk.en.html">Czech koruna</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-czk.en.html">
+                                    <span class="rate">26.020</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-czk.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="CZK" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="DKK" class="currency"><a href="eurofxref-graph-dkk.en.html">DKK</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-dkk.en.html">Danish krone</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-dkk.en.html">
+                                    <span class="rate">7.4370</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-dkk.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="DKK" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="GBP" class="currency"><a href="eurofxref-graph-gbp.en.html">GBP</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-gbp.en.html">Pound sterling</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-gbp.en.html">
+                                    <span class="rate">0.88383</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-gbp.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="GBP" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="HUF" class="currency"><a href="eurofxref-graph-huf.en.html">HUF</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-huf.en.html">Hungarian forint</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-huf.en.html">
+                                    <span class="rate">358.39</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-huf.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="HUF" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="PLN" class="currency"><a href="eurofxref-graph-pln.en.html">PLN</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-pln.en.html">Polish zloty</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-pln.en.html">
+                                    <span class="rate">4.5304</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-pln.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="PLN" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="RON" class="currency"><a href="eurofxref-graph-ron.en.html">RON</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-ron.en.html">Romanian leu</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-ron.en.html">
+                                    <span class="rate">4.8750</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-ron.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="RON" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="SEK" class="currency"><a href="eurofxref-graph-sek.en.html">SEK</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-sek.en.html">Swedish krona</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-sek.en.html">
+                                    <span class="rate">10.1110</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-sek.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="SEK" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="CHF" class="currency"><a href="eurofxref-graph-chf.en.html">CHF</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-chf.en.html">Swiss franc</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-chf.en.html">
+                                    <span class="rate">1.0798</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-chf.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="CHF" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="ISK" class="currency"><a href="eurofxref-graph-isk.en.html">ISK</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-isk.en.html">Icelandic krona</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-isk.en.html">
+                                    <span class="rate">156.10</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-isk.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="ISK" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="NOK" class="currency"><a href="eurofxref-graph-nok.en.html">NOK</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-nok.en.html">Norwegian krone</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-nok.en.html">
+                                    <span class="rate">10.3430</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-nok.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="NOK" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="HRK" class="currency"><a href="eurofxref-graph-hrk.en.html">HRK</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-hrk.en.html">Croatian kuna</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-hrk.en.html">
+                                    <span class="rate">7.5658</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-hrk.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="HRK" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="RUB" class="currency"><a href="eurofxref-graph-rub.en.html">RUB</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-rub.en.html">Russian rouble</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-rub.en.html">
+                                    <span class="rate">91.8979</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-rub.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="RUB" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="TRY" class="currency"><a href="eurofxref-graph-try.en.html">TRY</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-try.en.html">Turkish lira</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-try.en.html">
+                                    <span class="rate">8.8772</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-try.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="TRY" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="AUD" class="currency"><a href="eurofxref-graph-aud.en.html">AUD</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-aud.en.html">Australian dollar</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-aud.en.html">
+                                    <span class="rate">1.5819</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-aud.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="AUD" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="BRL" class="currency"><a href="eurofxref-graph-brl.en.html">BRL</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-brl.en.html">Brazilian real</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-brl.en.html">
+                                    <span class="rate">6.6568</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-brl.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="BRL" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="CAD" class="currency"><a href="eurofxref-graph-cad.en.html">CAD</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-cad.en.html">Canadian dollar</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-cad.en.html">
+                                    <span class="rate">1.5520a</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-cad.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="CAD" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="CNY" class="currency"><a href="eurofxref-graph-cny.en.html">CNY</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-cny.en.html">Chinese yuan renminbi</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-cny.en.html">
+                                    <span class="rate">7.8047</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-cny.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="CNY" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="HKD" class="currency"><a href="eurofxref-graph-hkd.en.html">HKD</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-hkd.en.html">Hong Kong dollar</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-hkd.en.html">
+                                    <span class="rate">9.4093</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-hkd.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="HKD" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="IDR" class="currency"><a href="eurofxref-graph-idr.en.html">IDR</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-idr.en.html">Indonesian rupiah</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-idr.en.html">
+                                    <span class="rate">16994.16</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-idr.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="IDR" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="ILS" class="currency"><a href="eurofxref-graph-ils.en.html">ILS</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-ils.en.html">Israeli shekel</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-ils.en.html">
+                                    <span class="rate">3.9814</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-ils.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="ILS" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="INR" class="currency"><a href="eurofxref-graph-inr.en.html">INR</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-inr.en.html">Indian rupee</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-inr.en.html">
+                                    <span class="rate">88.4320</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-inr.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="INR" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="KRW" class="currency"><a href="eurofxref-graph-krw.en.html">KRW</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-krw.en.html">South Korean won</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-krw.en.html">
+                                    <span class="rate">1354.98</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-krw.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="KRW" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="MXN" class="currency"><a href="eurofxref-graph-mxn.en.html">MXN</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-mxn.en.html">Mexican peso</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-mxn.en.html">
+                                    <span class="rate">24.5417</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-mxn.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="MXN" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="MYR" class="currency"><a href="eurofxref-graph-myr.en.html">MYR</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-myr.en.html">Malaysian ringgit</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-myr.en.html">
+                                    <span class="rate">4.9060</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-myr.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="MYR" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="NZD" class="currency"><a href="eurofxref-graph-nzd.en.html">NZD</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-nzd.en.html">New Zealand dollar</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-nzd.en.html">
+                                    <span class="rate">1.6863</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-nzd.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="NZD" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="PHP" class="currency"><a href="eurofxref-graph-php.en.html">PHP</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-php.en.html">Philippine peso</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-php.en.html">
+                                    <span class="rate">58.333</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-php.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="PHP" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="SGD" class="currency"><a href="eurofxref-graph-sgd.en.html">SGD</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-sgd.en.html">Singapore dollar</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-sgd.en.html">
+                                    <span class="rate">1.6121</span></a>
+                                    <span class="trend up">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-sgd.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="SGD" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="THB" class="currency"><a href="eurofxref-graph-thb.en.html">THB</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-thb.en.html">Thai baht</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-thb.en.html">
+                                    <span class="rate">36.287</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-thb.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="THB" title="" /></a></td>
+                            </tr>
+                            <tr>
+                                <td id="ZAR" class="currency"><a href="eurofxref-graph-zar.en.html">ZAR</a></td>
+                                <td class="alignLeft"><a href="eurofxref-graph-zar.en.html">South African rand</a></td>
+                                <td class="spot number"><a href="eurofxref-graph-zar.en.html">
+                                    <span class="rate">18.3058</span></a>
+                                    <span class="trend down">
+</span>
+                                </td>
+                                <td class="w5"><a href="eurofxref-graph-zar.en.html">
+                                    <img src="/shared/img/fxref.gif" width="19" height="15" alt="ZAR" title="" /></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+	var isfxref = true;
+		var currentTime = new Date(2021,01-1,30,15,56,32);
+</script>
+        <link rel="stylesheet" type="text/css" href="/shared/dist/css/require/datepicker.css">
+        <div class="section">
+            <h2>Downloads</h2>
+            <h4>Current reference rates</h4>
+            <ul class="-link-icons">
+                <li>
+                    <a class="pdf" href="/stats/shared/pdf/eurofxref.pdf?76540f31223766e7a69cf9ad770b28aa">PDF</a> <span class="lastUpdate"><span id="lastUpdateLabel">last update: </span>30 September 2020</span> </li>
+                <li>
+                    <a class="download" href="/stats/eurofxref/eurofxref.zip?b5ad40c7b6a0d8b5d3ed93cec4c33454">CSV (.zip)</a> <span class="lastUpdate"><span id="lastUpdateLabel">last update: </span>30 September 2020</span> </li>
+                <li>
+                    <a class="external" href="/stats/eurofxref/eurofxref-daily.xml?a9e01579778cbbc669e2a136915ccbfa">XML</a> <span class="lastUpdate"><span id="lastUpdateLabel">last update: </span>30 September 2020</span> </li>
+                <li> <a href="/home/html/rss.en.html">RSS feeds</a> </li>
+            </ul>
+            <h4>Historical reference rates</h4>
+            <div class="info-box -alert ">
+                <p>Between 16:00 CET on 28 November 2018 and 16:00 CET on 24 January 2019, some historical reference rate PDFs contained rates that were incorrect. All other formats (HTML, CSV, XML) contained the correct reference rates.</p>
+                <p>Historical reference rate PDFs for the following dates were affected: 28 May 2018, 29 May 2018, 30 May 2018, 4 June 2018, 5 June 2018, 6 June 2018, 14 June 2018, 12 November 2018, 19 November 2018, and 21 November 2018.</p>
+            </div>
+            <div class="date_picker_holder">
+                <div id="download_calendar"></div>
+                <input type="button" value="Download PDF" class="ecb-buttonHighlight" id="download_calendarButton">
+            </div>
+            <h4>Time series</h4>
+            <ul class="-link-icons">
+                <li>
+                    <a class="download" href="/stats/eurofxref/eurofxref-hist.zip?b5ad40c7b6a0d8b5d3ed93cec4c33454">CSV (.zip)</a> <span class="lastUpdate"><span id="lastUpdateLabel">last update: </span>30 September 2020</span> </li>
+                <li>
+                    <a class="external" href="/stats/eurofxref/eurofxref-hist.xml?a9e01579778cbbc669e2a136915ccbfa">XML</a> <span class="lastUpdate"><span id="lastUpdateLabel">last update: </span>30 September 2020</span> </li>
+                <li>
+                    <a class="external" href="/stats/eurofxref/eurofxref-hist-90d.xml?a9e01579778cbbc669e2a136915ccbfa">XML (last 90 days only)</a> <span class="lastUpdate"><span id="lastUpdateLabel">last update: </span>30 September 2020</span> </li>
+                <li>
+                    <a class="external" href="/stats/eurofxref/eurofxref-sdmx.xml?b7aa0b4c0f2b6cf2d1384a618143d0a5">XML (SDMX-ML)</a> <span class="lastUpdate"><span id="lastUpdateLabel">last update: </span>30 September 2020</span> </li>
+            </ul>
+            <p> To import CSV files into your spreadsheet, choose a setting that uses a dot "." as decimal separator (such as UK or US format).</p>
+        </div>
+
+        <div class="section">
+            <h3>Related information</h3>
+            <ul>
+                <li><a href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.en.pdf">Framework for the euro foreign exchange reference rates</a></li>
+                <li><a href="/press/pr/date/2015/html/pr151207.en.html">ECB introduces changes to euro foreign exchange reference rates, 7 December 2015</a></li>
+            </ul>
+            <p><a href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.en.pdf">Framework for the euro foreign exchange reference rates</a></p>
+            <p><a href="/press/pr/date/2015/html/pr151207.en.html">ECB introduces changes to euro foreign exchange reference rates, 7 December 2015</a></p>
+            <!--
+              <div class="ecb-langSelector"><span class="offeredLanguage"><a href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.en.pdf?c883afa875c74877fdf4634dcb85688c" lang="en"
+                                  class="pdf">ENGLISH</a></span><div class="moreLanguages">
+                                      <span class="lnglabel">OTHER LANGUAGES</span>
+                                      <span class="lang-counter">(22)</span>
+                                      <span class="ecb-plus">+</span>
+                                  </div>
+                                  <div class="ecb-langPopup">
+                                      <div class="ecb-closeBtn"></div>
+                                      <div class="ecb-langHead">Select your language</div>
+                                      <div class="otherlang"><a lang="bg" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.bg.pdf?7379bd9fb5092c389a929c93b757a49d">
+                                  <span class="ecb-full">Български</span><span class="ecb-short">BG</span></a><a lang="cs" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.cs.pdf?3c5810eaf0b945ad6f94fe9f0c45bd35">
+                                  <span class="ecb-full">Čeština</span><span class="ecb-short">CS</span></a><a lang="da" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.da.pdf?1ca6bb16cb00ce1cdddc502933b567a9">
+                                  <span class="ecb-full">Dansk</span><span class="ecb-short">DA</span></a><a lang="de" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.de.pdf?c68eddd87e8acd8997844c6b53cabbe6">
+                                  <span class="ecb-full">Deutsch</span><span class="ecb-short">DE</span></a><a lang="el" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.el.pdf?7e68beca27e4cff2dda1f5460e19d1c6">
+                                  <span class="ecb-full">Eλληνικά</span><span class="ecb-short">EL</span></a><a lang="es" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.es.pdf?cfd8b42162ea69b50a84debcee8cfa2f">
+                                  <span class="ecb-full">Español</span><span class="ecb-short">ES</span></a><a lang="et" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.et.pdf?d89241aff47d157c68b55640f4aa9371">
+                                  <span class="ecb-full">Eesti keel</span><span class="ecb-short">ET</span></a><a lang="fi" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.fi.pdf?b0088be119f1d3874108b9b18179cc7c">
+                                  <span class="ecb-full">Suomi</span><span class="ecb-short">FI</span></a><a lang="fr" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.fr.pdf?0bdac890797fed253386d3828a830f72">
+                                  <span class="ecb-full">Français</span><span class="ecb-short">FR</span></a><a lang="hr" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.hr.pdf?e73a9a8a0376ad57a14a0eb480e11a91">
+                                  <span class="ecb-full">Hrvatski</span><span class="ecb-short">HR</span></a><a lang="hu" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.hu.pdf?6a3a61f66b7f7d0c9b350c606b5da8f9">
+                                  <span class="ecb-full">Magyar</span><span class="ecb-short">HU</span></a><a lang="it" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.it.pdf?057246e1ec1aaa56eb0179c048af179b">
+                                  <span class="ecb-full">Italiano</span><span class="ecb-short">IT</span></a><a lang="lt" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.lt.pdf?6ae4189e329b480a5abddcae67de6951">
+                                  <span class="ecb-full">Lietuvių</span><span class="ecb-short">LT</span></a><a lang="lv" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.lv.pdf?13c93d40f2cf907a0c79cb5d444e8553">
+                                  <span class="ecb-full">Latviešu</span><span class="ecb-short">LV</span></a><a lang="mt" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.mt.pdf?4c3e3fb32b79a22593ff72633fb04e0a">
+                                  <span class="ecb-full">Malti</span><span class="ecb-short">MT</span></a><a lang="nl" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.nl.pdf?aa83106a5e97f4159231a04bd7e16152">
+                                  <span class="ecb-full">Nederlands</span><span class="ecb-short">NL</span></a><a lang="pl" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.pl.pdf?a7a8a507591419819dd8c3a455b601a0">
+                                  <span class="ecb-full">Polski</span><span class="ecb-short">PL</span></a><a lang="pt" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.pt.pdf?27b8330add998b7b17c65285590ad1dd">
+                                  <span class="ecb-full">Português</span><span class="ecb-short">PT</span></a><a lang="ro" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.ro.pdf?3fe4d213ab15f79c69cbec3ef6cbd795">
+                                  <span class="ecb-full">Română</span><span class="ecb-short">RO</span></a><a lang="sk" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.sk.pdf?1a69eb2067b97290c993cf311395254b">
+                                  <span class="ecb-full">Slovenčina</span><span class="ecb-short">SK</span></a><a lang="sl" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.sl.pdf?8824f1303d4e1eca82d90727b2deaa06">
+                                  <span class="ecb-full">Slovenščina</span><span class="ecb-short">SL</span></a><a lang="sv" href="/stats/pdf/exchange/Frameworkfortheeuroforeignexchangereferencerates.sv.pdf?6c7b37d5874e6587706885d929eae61e">
+                                  <span class="ecb-full">Svenska</span><span class="ecb-short">SV</span></a></div></div></div> </p>
+           <p>ECB introduces changes to euro foreign exchange reference rates, 7 December 2015
+            <div class="ecb-langSelector"><span class="offeredLanguage"><a href="/press/pr/date/2015/html/pr151207.en.html" lang="en"
+                                  class="arrow">ENGLISH</a></span><div class="moreLanguages">
+                                      <span class="lnglabel">OTHER LANGUAGES</span>
+                                      <span class="lang-counter">(22)</span>
+                                      <span class="ecb-plus">+</span>
+                                  </div>
+                                  <div class="ecb-langPopup">
+                                      <div class="ecb-closeBtn"></div>
+                                      <div class="ecb-langHead">Select your language</div>
+                                      <div class="otherlang"><a lang="bg" href="/press/pr/date/2015/html/pr151207.bg.html">
+                                  <span class="ecb-full">Български</span><span class="ecb-short">BG</span></a><a lang="cs" href="/press/pr/date/2015/html/pr151207.cs.html">
+                                  <span class="ecb-full">Čeština</span><span class="ecb-short">CS</span></a><a lang="da" href="/press/pr/date/2015/html/pr151207.da.html">
+                                  <span class="ecb-full">Dansk</span><span class="ecb-short">DA</span></a><a lang="de" href="/press/pr/date/2015/html/pr151207.de.html">
+                                  <span class="ecb-full">Deutsch</span><span class="ecb-short">DE</span></a><a lang="el" href="/press/pr/date/2015/html/pr151207.el.html">
+                                  <span class="ecb-full">Eλληνικά</span><span class="ecb-short">EL</span></a><a lang="es" href="/press/pr/date/2015/html/pr151207.es.html">
+                                  <span class="ecb-full">Español</span><span class="ecb-short">ES</span></a><a lang="et" href="/press/pr/date/2015/html/pr151207.et.html">
+                                  <span class="ecb-full">Eesti keel</span><span class="ecb-short">ET</span></a><a lang="fi" href="/press/pr/date/2015/html/pr151207.fi.html">
+                                  <span class="ecb-full">Suomi</span><span class="ecb-short">FI</span></a><a lang="fr" href="/press/pr/date/2015/html/pr151207.fr.html">
+                                  <span class="ecb-full">Français</span><span class="ecb-short">FR</span></a><a lang="hr" href="/press/pr/date/2015/html/pr151207.hr.html">
+                                  <span class="ecb-full">Hrvatski</span><span class="ecb-short">HR</span></a><a lang="hu" href="/press/pr/date/2015/html/pr151207.hu.html">
+                                  <span class="ecb-full">Magyar</span><span class="ecb-short">HU</span></a><a lang="it" href="/press/pr/date/2015/html/pr151207.it.html">
+                                  <span class="ecb-full">Italiano</span><span class="ecb-short">IT</span></a><a lang="lt" href="/press/pr/date/2015/html/pr151207.lt.html">
+                                  <span class="ecb-full">Lietuvių</span><span class="ecb-short">LT</span></a><a lang="lv" href="/press/pr/date/2015/html/pr151207.lv.html">
+                                  <span class="ecb-full">Latviešu</span><span class="ecb-short">LV</span></a><a lang="mt" href="/press/pr/date/2015/html/pr151207.mt.html">
+                                  <span class="ecb-full">Malti</span><span class="ecb-short">MT</span></a><a lang="nl" href="/press/pr/date/2015/html/pr151207.nl.html">
+                                  <span class="ecb-full">Nederlands</span><span class="ecb-short">NL</span></a><a lang="pl" href="/press/pr/date/2015/html/pr151207.pl.html">
+                                  <span class="ecb-full">Polski</span><span class="ecb-short">PL</span></a><a lang="pt" href="/press/pr/date/2015/html/pr151207.pt.html">
+                                  <span class="ecb-full">Português</span><span class="ecb-short">PT</span></a><a lang="ro" href="/press/pr/date/2015/html/pr151207.ro.html">
+                                  <span class="ecb-full">Română</span><span class="ecb-short">RO</span></a><a lang="sk" href="/press/pr/date/2015/html/pr151207.sk.html">
+                                  <span class="ecb-full">Slovenčina</span><span class="ecb-short">SK</span></a><a lang="sl" href="/press/pr/date/2015/html/pr151207.sl.html">
+                                  <span class="ecb-full">Slovenščina</span><span class="ecb-short">SL</span></a><a lang="sv" href="/press/pr/date/2015/html/pr151207.sv.html">
+                                  <span class="ecb-full">Svenska</span><span class="ecb-short">SV</span></a></div></div></div></p>
+           -->
+        </div>
+        <div class="see-also-boxes -align-center -two-columns">
+            <div class="headline">
+                SEE ALSO
+            </div>
+            <h2>Statistical Data Warehouse</h2>
+            <div class="container">
+                <div class="content-box">
+                    <h3></h3>
+                    <a href="http://sdw.ecb.europa.eu/browse.do?node=9691296" title="SDW - The ECB's Statistical Data Warehouse">Time series for bilateral exchange rates</a>
+                </div>
+            </div>
+        </div>
+        <div class="explainer-box" data-image="/explainers/tell-me-more/shared/img/exchange_rates_300x190.jpg">
+            <div class="wrapper">
+                <div class="bubble-box">NOT AN EXPERT? <strong>CHECK EXPLAINER</strong></div>
+                <a href="/explainers/tell-me-more/html/role_of_exchange_rates.en.html"><div><span>LEARN MORE</span></div>What is the role of exchange rates?</a>
+            </div>
+        </div>
+
+
+
+
+        <div class="in-this-section" id="pages-in-section-holder">
+            <h3>All pages in this section</h3>
+            <div class="content-box">
+
+            </div>
+        </div>
+    </main>
+</div>
+<div id="feedback" class="hidden">
+    <div class="content-box">
+        <div class="initial">
+            <div class="title">Are you happy with this page?</div>
+            <a class="button -inverted-color" id="feedback-yes">Yes</a>
+            <a class="button -inverted-color" id="feedback-no">No</a>
+        </div>
+        <div class="second hidden">
+            <div class="title">What made you unhappy?</div>
+            <a class="button -inverted-color" id="feedback-broken">Page not working</a>
+            <a class="button -inverted-color" id="feedback-content">Information not useful</a>
+            <a class="button -inverted-color" id="feedback-design">Design not attractive</a>
+            <a class="button -inverted-color" id="feedback-other">Something else</a>
+        </div>
+        <div class="final hidden">
+            <div class="title">Thank you for letting us know!</div>
+        </div>
+    </div>
+</div>		<footer id="ecb-doc-footer">
+    <div class="ecb-footerTop">
+        <div class="sitemap">
+            <a href="/home/sitedir/html/index.en.html" title="Site Directory">Site directory</a>
+        </div>
+        <div class="socialLinks">
+            <a class="inline-link" href="/home/socialmedia/html/index.en.html" title="Official social media channels">FOLLOW US</a>
+            <a href="http://twitter.com/ecb" class="twitter" title="Twitter"></a>
+            <a href="https://www.linkedin.com/company/european-central-bank" class="linkedin" title="LinkedIn"></a>
+            <a href="https://www.instagram.com/europeancentralbank/" class="instagram" title="Instagram"></a>
+            <a href="https://www.youtube.com/user/ecbeuro" class="youtube" title="YouTube"></a>
+            <a href="https://www.flickr.com/photos/europeancentralbank/sets/" class="flickr" title="Flickr"></a>
+            <a href="https://soundcloud.com/europeancentralbank" class="soundcloud" title="Soundcloud"></a>
+            <a href="/rss" class="rss" title="RSS news feeds"></a>
+        </div>
+    </div><div class="ecb-footerBottom">
+
+    <p><span>Copyright 2021, </span>European Central Bank</p>
+
+    <div class="ecb-serviceNavigation">
+        <div class="ecb-serviceNavigationBox">
+            <div class="ecb-serviceNavigationBoxTitle">Useful links</div>
+            <div class="ecb-serviceNavigationBoxLinks">
+                <ul>
+                    <li><a href="/careers/vacancies/html/index.en.html">Work with us</a></li>
+                    <li><a href="/home/glossary/html/index.en.html">Glossary</a></li>
+                    <li><a href="/home/links/html/index.en.html">Other institutions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ecb-serviceNavigationBox">
+            <div class="ecb-serviceNavigationBoxTitle">Using our site</div>
+            <div class="ecb-serviceNavigationBoxLinks">
+                <ul>
+                    <li><a href="/home/disclaimer/html/index.en.html">Disclaimer &amp; Copyright</a></li>
+                    <li><a href="/home/data-protection/privacy-statements/website/html/index.en.html">Privacy statement</a></li>
+                    <li><a href="/home/languagepolicy/html/index.en.html">Language policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ecb-serviceNavigationBox">
+            <div class="ecb-serviceNavigationBoxTitle">Corporate Policies</div>
+            <div class="ecb-serviceNavigationBoxLinks">
+                <ul>
+                    <li><a href="/home/data-protection/html/index.en.html">Data Protection</a></li>
+                    <li><a href="/ecb/access_to_documents/html/index.en.html">Access to documents</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ecb-serviceNavigationBox">
+            <div class="ecb-serviceNavigationBoxTitle">Contact</div>
+            <div class="ecb-serviceNavigationBoxLinks">
+                <ul>
+                    <li><a href="/home/contacts/html/index.en.html">Contacts</a></li>
+                    <li><a href="/home/contacts/address/html/index.en.html">Address</a></li>
+                    <li><a href="/home/contacts/working-hours/html/index.en.html">Working hours</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>    <!-- <button id='back-to-top' class='fa fa-angle-up'>Back to top</button> -->
+</footer>
+
+<link rel="stylesheet" href="/shared/dist/css/print.min.css?19905-2" media="print">
+
+<div class="ecb-cookieConsent hidden" id="cookieConsent">
+    <div class="initial">
+        <h2>Our website uses cookies</h2>
+        <p>We are always working to improve this website for our users. To do this, we use the anonymous data provided by cookies.<br>
+            <a href="/home/data-protection/privacy-statements/website/html/index.en.html" class="arrow">Learn more about how we use cookies</a></p>
+        <div class="consentButtons initial cf">
+            <a class="check linkButton linkButtonLarge floatLeft highlight-medium">I understand and I accept the use of cookies</a>
+            <a class="cross linkButton linkButtonLarge floatRight highlight-extra-light">I do not accept the use of cookies</a>
+        </div>
+    </div>
+    <div class="accepted hidden">
+        <div style="background-image:url(/shared/nav/svg/cookies_accepted.svg);width:100px;height:100px;margin:auto" class="img"></div>
+        <h2>Thank you!</h2>
+    </div>
+    <div class="refused hidden">
+        <div style="background-image:url(/shared/nav/svg/cookies_refused.svg);width:100px;height:100px;margin:auto" class="img"></div>
+        <h2>Thank you!</h2>
+    </div>
+    <div class="updated hidden">
+        <h2>We have updated our privacy policy</h2>
+        <p>We are always working to improve this website for our users. To do this, we use the anonymous data provided by cookies.<br>
+            <a href="/home/data-protection/privacy-statements/website/html/index.en.html" class="arrow">See what has changed in our privacy policy</a></p>
+        <div class="consentButtons updated cf">
+            <a class="check linkButton linkButtonLarge floatLeft highlight-medium">I understand and I accept the use of cookies</a>
+            <a class="cross linkButton linkButtonLarge floatRight highlight-extra-light">I do not accept the use of cookies</a>
+        </div>
+    </div>
+    <div class="expired hidden">
+        <h2>Your cookie preference has expired</h2>
+        <p>We are always working to improve this website for our users. To do this, we use the anonymous data provided by cookies.<br>
+            <a href="/home/data-protection/privacy-statements/website/html/index.en.html" class="arrow">Learn more about how we use cookies</a></p>
+        <div class="consentButtons expired cf">
+            <a class="check linkButton linkButtonLarge floatLeft highlight-medium">I understand and I accept the use of cookies</a>
+            <a class="cross linkButton linkButtonLarge floatRight highlight-extra-light">I do not accept the use of cookies</a>
+        </div>
+    </div>
+</div>
+<div class="cookieBlockedMessage template hidden">
+    <div class="cookieBlockedContentHolder">
+        <div class="mainCookieBlockedMessage">This feature requires cookies.</div>
+        <a href="/home/data-protection/privacy-statements/website/html/index.en.html" class="button">Privacy statement</a>
+    </div>
+</div>
+
+</body>
+</html>
