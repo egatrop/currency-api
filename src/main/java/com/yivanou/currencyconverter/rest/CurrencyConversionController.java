@@ -29,7 +29,7 @@ public class CurrencyConversionController {
     @Autowired
     private CurrencyConverterService service;
 
-    @GetMapping("statistic")
+    @GetMapping
     public Map<String, Long> getStatistic() {
         return service.getCounters();
     }

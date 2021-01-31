@@ -61,8 +61,10 @@ public class CurrencyConverterService {
     }
 
     public Map<String, Long> getCounters() {
-        return counters.entrySet().stream()
-                .filter(e -> dataSource.getValidCurrencies().contains(e.getKey()))
-                .collect(Collectors.toMap(Map.Entry::getKey, e -> e.getValue().longValue()));
+        return dataSource.getValidCurrencies().stream()
+                .collect(Collectors.toMap(
+                        c -> c,
+                        c -> counters.get(c) != null ? counters.get(c).longValue() : 0L)
+                );
     }
 }
